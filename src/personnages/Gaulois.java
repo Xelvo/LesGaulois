@@ -56,19 +56,21 @@ public class Gaulois {
 	}
 	
 	public void frapper(Romain romain) {
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de "
-		+ romain.getNom());
+		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
 	}
 	
 	@Override
 	public String toString() {
-		return "Gaulois [nom=" + nom + ", force=" + force
-		+ ", effetPotion=" + effetPotion + "]";
+		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
+		System.out.println(asterix);
 	}
 	
 	public static void main(String[] args) {
 		//TODO créer un main permettant de tester la classe Gaulois
+		asterix (nom = "Astérix", force = 8);
+		/*System.out.println(asterix);*/
+		System.out.println(nom);
 	}
 }
 
@@ -114,9 +116,7 @@ public class Druide {
 		this.nom = nom;
 		this.effetPotionMin = effetPotionMin;
 		this.effetPotionMax = effetPotionMax;
-		parler("Bonjour, je suis le druide " + nom + " et ma potion peut aller
-		d'une force " + effetPotionMin + " à "
-		+ effetPotionMax + ".");
+		parler("Bonjour, je suis le druide " + nom + " et ma potion peut aller d'une force " + effetPotionMin + " à " + effetPotionMax + ".");
 	}
 	
 	public String getNom() {
@@ -157,8 +157,7 @@ public class Chef {
 	}
 	
 	public void frapper(Romain romain) {
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de " +
-		romain.getNom());
+		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
 	}
 }
