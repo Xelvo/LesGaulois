@@ -32,9 +32,9 @@ public class Gaulois {
 	}
 	
 	private String prendreParole() {
-		String coucou = "Le gaulois " + nom + " : ";
-		System.out.print(coucou);
-		return coucou
+		String newname = "Le gaulois " + nom + " : ";
+		System.out.print(newname);
+		return newname
 	}
 	
 	public void frapper(Romain romain) {
