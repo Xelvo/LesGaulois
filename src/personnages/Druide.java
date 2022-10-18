@@ -30,4 +30,5 @@ public class Druide {
 	public static void preparerPortion() {
 		
 	}
+	
 }

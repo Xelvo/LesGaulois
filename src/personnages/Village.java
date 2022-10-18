@@ -11,5 +11,6 @@ public class Village {
 	 } 
 	 public String getNom() { 
 	 return nom; 
-	 } 
+	 }
+	 
 }
