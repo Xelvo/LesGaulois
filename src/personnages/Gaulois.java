@@ -34,7 +34,7 @@ public class Gaulois {
 	private String prendreParole() {
 		String newname = "Le gaulois " + nom + " : ";
 		System.out.print(newname);
-		return newname
+		return newname;
 	}
 	
 	public void frapper(Romain romain) {
