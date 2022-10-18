@@ -17,25 +17,25 @@ public class Romain {
 	}
 
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+		System.out.println(prendreParole() + "Â« " + texte + "Â»");
 	}
 
 	private String prendreParole() {
 		return "Le romain " + nom + " : ";
 	}
 
-	public void recevoirCoup(int forceCoup) {
-		force -= forceCoup;
-		if (force > 0) {
-			parler("Aïe");
-		} else {
-			parler("J'abandonne...");
-		}
-	}
+//	public void recevoirCoup(int forceCoup) {
+//		force -= forceCoup;
+//		if (force > 0) {
+//			parler("AÃ¯e");
+//		} else {
+//			parler("J'abandonne...");
+//		}
+//	}
 	
 	public Equipement[] recevoirCoup(int forceCoup) {
 		Equipement[] equipementEjecte = null;
-		// précondition
+		// prÃ©condition
 		assert force > 0;
 		int oldForce = force;
 		
@@ -43,20 +43,20 @@ public class Romain {
 		
 		force -= forceCoup;
 //		if (force > 0) {
-//			parler("Aïe");
+//			parler("AÃ¯e");
 //		} else {
 //			equipementEjecte = ejecterEquipement();
 //			parler("J'abandonne...");
 //		}
 		switch (force) {
 		case 0:
-			parler("Aïe");
+			parler("AÃ¯e");
 		default:
 			equipementEjecte = ejecterEquipement();
 			parler("J'abandonne...");
 			break;
 		}
-		// post condition : la force à diminuer
+		// post condition : la force Ã  diminuer
 		assert force < oldForce;
 		return equipementEjecte;
 	}
@@ -65,7 +65,7 @@ public class Romain {
 		texte = "Ma force est de " + this.force + ", et la force du coup est de " + forceCoup;
 		int resistanceEquipement = 0;
 		if (!(nbEquipement == 0)) {
-			texte += "\nMais heureusement, grace à mon équipement sa force est diminué de ";
+			texte += "\nMais heureusement, grace Ã  mon Ã©quipement sa force est diminuÃ© de ";
 			for (int i = 0; i < nbEquipement;) {
 				if ((equipements[i] != null && equipements[i].equals(Equipement.BOUCLIER)) == true) {
 					resistanceEquipement += 8;
@@ -84,7 +84,7 @@ public class Romain {
 		
 	private Equipement[] ejecterEquipement() {
 		Equipement[] equipementEjecte = new Equipement[nbEquipement];
-		System.out.println("L'équipement de " + nom.toString() + "s'envole sous la force du coup.");
+		System.out.println("L'Ã©quipement de " + nom.toString() + "s'envole sous la force du coup.");
 		// (TODO) A faire !!!
 		int nbEquipementEjecte = 0;
 		for (int i = 0; i < nbEquipement; i++) {
