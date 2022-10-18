@@ -10,7 +10,7 @@ public enum Equipement {
 		this.nom = nom;
 	}
 	
-	public String toString() {
+	public String getString() {
 		return nom;
 	}
 	
