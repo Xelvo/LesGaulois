@@ -119,7 +119,7 @@ public class Romain {
 			case 2 : System.out.println("Le soldat " + nom + " est deja bien protégé !");
 					break;
 			case 1 : if (equipements[0] == equip) {
-				System.out.println("Le soldat " + nom + " possede déjà" + equip.getNom() + "!");
+				System.out.println("Le soldat " + nom + " possede déjà un" + equip.getNom() + "!");
 				}
 			else {
 				equipe(equip);
