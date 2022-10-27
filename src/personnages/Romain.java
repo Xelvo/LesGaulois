@@ -107,7 +107,7 @@ public class Romain {
 	}
 				    
 	public String toString() {
-		return "Romain [nom = " + nom + ", force = " + force + "];
+		return "Romain [nom = " + nom + ", force = " + force + "]";
 	}
 		
 	public void equipe(Equipement equip) {
