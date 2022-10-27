@@ -138,7 +138,7 @@ public class Romain {
 		System.out.println(minus);
 		System.out.println(minus.prendreParole());
 		minus.parler("test");
-		minus.recevoircoup(2);
+		minus.recevoirCoup(2);
 		System.out.println(Equipement.CASQUE);
 		System.out.println(Equipement.BOUCLIER);
 		minus.sEquiper(Equipement.CASQUE);
