@@ -41,9 +41,8 @@ public class Gaulois {
 	
 	
 	private String prendreParole() {
-		return "Le gaulois " + nom + " : ";
-
-		
+		String texte = "Le gaulois " + nom + " : ";
+		return texte;
 	}
 
 //	public void frapper(Romain romain) {
@@ -68,11 +67,7 @@ public class Gaulois {
 		asterix.boirePotion(panoramix.effetPotionPreparee);
 
 	}
-	
-	private String prendreParole() {
-		String texte = "Le gaulois " + nom + " : ";
-		return texte;
-	}
+
 	
 	public void frapper(Romain romain) {
 		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
