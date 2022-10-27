@@ -81,6 +81,11 @@ public class Gaulois {
 		parler("Merci Druide, je sens ma force est"+effetPotion + " fois décuplé");
 	}
 	
+	public void faireUneDonnation(Musee musee) {
+		String texte;
+		texte = ("Le gaulois" + nom + " : « Je donne au musée tous mes trophees : - bouclier \n-casque \n-casque»");
+	}
+	
 }
 
 
