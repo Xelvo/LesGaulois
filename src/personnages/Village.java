@@ -7,9 +7,9 @@ public class Village {
 	private int nbVillageoisMaximum = 30;
 	private Gaulois[] villageois;
 	
-	public Village(String nom,int nbVillageoisMaximum ) { 
+	public Village(String nom,int nbVillageoisMaximum) { 
 		this.nom = nom; 
-		villageois = new Gaulois[nbVillageoisMaximum]
+		villageois = new Gaulois[nbVillageoisMaximum];
 	} 
 	
 	public void setChef(Chef chef) { 
