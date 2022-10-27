@@ -33,10 +33,9 @@ public class Gaulois {
 	}
 
 //	private String prendreParole() {
-//		String coucou = "Le gaulois " + nom + " : ";
-//		System.out.print(coucou);
-//		return coucou;
-//		
+//		String variableTest = "Le gaulois " + nom + " : ";
+//		System.out.print(variableTest);
+//		return variableTest;
 //	}
 	
 	
