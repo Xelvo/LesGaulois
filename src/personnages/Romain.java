@@ -83,7 +83,6 @@ public class Romain {
 	}	
 
 	private int CalculResistanceEquipement(int forceCoup) {
-		String texte;
 		texte = "Ma force est de " + this.force + ", et la force du coup est de " + forceCoup;
 		int resistanceEquipement = 0;
 		if (!(nbEquipement == 0)) {
