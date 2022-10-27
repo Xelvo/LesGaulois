@@ -18,7 +18,7 @@ public class Chef {
 	}
 
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+		System.out.println(prendreParole() + "Â« " + texte + "Â»");
 	}
 
 	private String prendreParole() {
@@ -26,8 +26,47 @@ public class Chef {
 	}
 
 	public void frapper(Romain romain) {
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
+		System.out.println(nom + " envoie un grand coup dans la mÃ¢choire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
 	}
 	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// A rajouter sur un nouvel onglet de eclipse : 
+package personnages;
+
+public class Trophee {
+	private Gaulois gaulois;
+	private Equipement equipement;
+	
+	public Trophee(Gaulois gaulois, Equipement equipement) {
+		super();
+		this.gaulois = gaulois;
+		this.equipement = equipement;
+	}
+	
+	public String donnerNom() {
+		return gaulois.getNom();
+	}
+	
+}
+
+
+// A rajouter sur un nouvel onglet de eclipse :
+package personnages;
+
+public class Musee {
+	private Trophee[] trophee = new Trophee[200];
+	private int nbTrophee;
 }
