@@ -111,7 +111,7 @@ public class Romain {
 	}
 		
 	public void equipe(Equipement equip) {
-		System.out.println("Le soldat" + nom + " s'équipe avec un " equip.getNom() + "!");
+		System.out.println("Le soldat" + nom + " s'équipe avec un " + equip.getNom() + "!");
 		nbEquipement ++;
 		equipements[nbEquipement - 1] = equip;
 	}
