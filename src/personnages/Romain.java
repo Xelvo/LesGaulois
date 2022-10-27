@@ -90,7 +90,7 @@ public class Romain {
 		if (!(nbEquipement == 0)) {
 			texte += "Mais heureusement, grace à mon équipement sa force est diminué de ";
 			for (int i = 0; i < nbEquipement; i++) {
-				if (equipements[i] != null && equipements[i].equals(Equipement.BOUCLIER) {
+				if (equipements[i] != null && equipements[i].equals(Equipement.BOUCLIER)) {
 					resistanceEquipement += 8;
 				}
 				else {
