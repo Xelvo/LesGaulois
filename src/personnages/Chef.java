@@ -56,8 +56,8 @@ public class Trophee {
 		this.equipement = equipement;
 	}
 	
-	public String donnerNom() {
-		return gaulois.getNom();
+	public void donnerTrophees(Gaulois gaulois, Equipement equipements) {
+		
 	}
 	
 }
