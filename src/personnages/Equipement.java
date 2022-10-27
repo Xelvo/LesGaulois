@@ -15,6 +15,6 @@ public enum Equipement {
 	
 	@Override
 	public String toString() {
-		return "Equipement [nom"+ nom +"];
+		return "Equipement [nom"+ nom +"]";
 	}
 }
