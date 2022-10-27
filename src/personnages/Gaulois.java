@@ -80,6 +80,7 @@ public class Gaulois {
 		for (int i = 0; trophees != null && i < trophees.length; i++, nb_trophees++) {
 			this.trophees[nb_trophees] = trophees[i];
 		}
+		return;
 	}
 	
 	public void boirePotion(int effetPotionPreparee) {
