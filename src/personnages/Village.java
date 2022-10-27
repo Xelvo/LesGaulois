@@ -26,7 +26,7 @@ public class Village {
 	}
 	
 	public Gaulois trouverHabitant(int nbVillageois) {
-		return villageois[nbVillageois]
+		return villageois[nbVillageois];
 	}
 	
 	public void afficherVillageois() {
