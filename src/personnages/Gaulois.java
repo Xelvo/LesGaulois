@@ -64,7 +64,6 @@ public class Gaulois {
 		asterix.frapper(minus);
 		panoramix.preparerPotion();
 		asterix.boirePotion(panoramix.effetPotionPreparee);
-
 	}
 
 	
