@@ -113,14 +113,14 @@ public class Romain {
 	public void equipe(Equipement equip) {
 		System.out.println("Le soldat" + nom + " s'équipe avec un " equip.getNom() + "!");
 		nbEquipement ++;
-		equipement[nbEquipement - 1] = equip;
+		equipements[nbEquipement - 1] = equip;
 	}
 				    
 	public void sEquiper(Equipement equip) {
 		switch(nbEquipement) {
 			case 2 : System.out.println("Le soldat " + nom + " est deja bien protégé !");
 					break;
-			case 1 : if (equipement[0] == equip) {
+			case 1 : if (equipements[0] == equip) {
 				System.out.println("Le soldat " + nom + " possede déjà" + equip.getNom() + "!");
 				}
 			else {
