@@ -119,7 +119,7 @@ public class Romain {
 	public void sEquiper(Equipement equip) {
 		switch(nbEquipement) {
 			case 2 : System.out.println("Le soldat " + nom + " est deja bien protégé !");
-					beark;
+					break;
 			case 1 : if (equipement[0] == equip) {
 				System.out.println("Le soldat " + nom + " possede déjà" + equip.getNom() + "!");
 				}
